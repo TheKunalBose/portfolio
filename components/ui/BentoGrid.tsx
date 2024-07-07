@@ -63,6 +63,19 @@ style={{
                         />
                   )}
             </div>
+            <div
+                  className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
+            } `}
+            >
+            {spareImg && (
+            <img
+                  src={spareImg}
+                  alt={spareImg}
+              //   width={220}
+                  className="object-cover object-center w-full h-full"
+            />
+            )}
+            </div>
             {id === 6 && (
                   <BackgroundGradientAnimation>
                         <div className="absolute z-50 flex-items-center
